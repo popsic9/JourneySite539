@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(150, 149, 149);
+  color: rgb(48, 45, 45);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+
+ul {
+  /* no point for lists*/
+  list-style: none;
+}
+
+/* Nav Container */
+nav {
+    background-color: dimgrey;
+    overflow: hidden;
+    font-family: Arial;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 2px 10px #333333;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+/* Add a yellow background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(247, 222, 83);
+  }
+  
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(236, 225, 159);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: rgb(12, 12, 12);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color:  rgb(247, 222, 83);
+  }
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+.container {
+  margin: 5px auto ;
+  max-width: 1200px;
+  min-width: 700px;
+}
+
+.container > header{
+  height: 360px;
+  background: 
+    url("../images/homepage.jpg")
+    no-repeat 50% 50%;
+  background-color: emonchiffon;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+
+
+.container > header p {
+  color: black;
+  font-weight: 400;
+  font-size: 2em;
+  margin-left: 150px;
+  /* line */
+  border-left: 1px solid white;
+  padding-left: 5px;
+}
+
+.container > header p span{
+  color: white;
+}
+
+.main-section{
+  background-color: #F2EBD9;
+  border-bottom: 1px solid white;
+  padding: 15px;
+  transition: background-color 100ms linear;
+}
+
+.self-intro{
+  display: flex;
+  align-items: center;
+}
+
+#self-image {
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 250px;
+  border: 1px solid #FFFFFF;
+}
+
+.self-words{
+  color: #624630;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 4. footer*/
+footer {
+  background: rgb(150, 149, 149);
+  font-size:  1em;
+  height:     200px;
+  position:   relative;
+  margin-top: 100px;
+}
+footer p {
+  text-align: center;
+}
+
+
+footer ul {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+footer ul li {
+   flex: 1;
+}
