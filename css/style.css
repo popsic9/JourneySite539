@@ -18,6 +18,21 @@ ul {
   list-style: none;
 }
 
+.icon > li{
+  display: inline-block;
+  width: auto;
+  margin: 10px;
+  list-style: outside none none;
+}
+
+.icon a:link{
+  color:black;
+}
+
+.icon-index {
+  margin-left: 40px;
+}
+
 /* Nav Container */
 nav {
     background-color: dimgrey;
@@ -119,6 +134,7 @@ nav {
 
 .container > header p {
   color: black;
+  font-family: 'Crafty Girls';font-size: 22px;
   font-weight: 400;
   font-size: 2em;
   margin-left: 150px;
@@ -131,55 +147,180 @@ nav {
   color: white;
 }
 
+
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 25%;
+  background-color: rgb(243, 227, 186);
+  padding: 20px;
+}
+
 .main-section{
+  flex: 75%;
   background-color: #F2EBD9;
   border-bottom: 1px solid white;
-  padding: 15px;
+  padding: 20px;
   transition: background-color 100ms linear;
 }
 
-.self-intro{
-  display: flex;
-  align-items: center;
+.section{
+  background-color: #F2EBD9;
+  border-bottom: 1px solid white;
+  padding: 20px;
+  transition: background-color 100ms linear;
 }
 
+.section h2{
+  color: #624630;
+  font-size: 20px;
+  margin: 20px;
+  
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 40% 60%;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+
+
+.intro{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img{
+  flex: 40%;
+}
 #self-image {
-  margin-top: 50px;
   margin-left: 50px;
   height: 250px;
   border: 1px solid #FFFFFF;
 }
-
 .city-image {
-  margin-top: 50px;
-  margin-left: 50px;
   height: 150px;
   width: 300px;
   border: 1px solid #FFFFFF;
 }
 
-.self-words{
+.words{
+  flex: 60%;
   color: #624630;
   font-weight: 400;
-  text-decoration: none;
-  margin-left: 50px;
-  margin-right: 50px;
+  line-height: 20px;
 }
 
-.city-words{
-  color: #624630;
-  font-weight: 400;
-  text-decoration: none;
-  line-height: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+.self-words{
+  font-family: 'Annie Use Your Telescope';
+  font-size: 22px;
+  margin-top: 20px; 
 }
 
 .title {
   color: #624630;
-  line-height: 50px;
+  font-size: 35px;
+  margin-top: 10px;
   text-align: center;
 }
+
+
+
+
+
+.city_disctiption{
+  color: #624630;
+  text-align:left;
+  margin-top: 30px;
+  margin-left: 70px;
+  
+}
+
+
+
+#food-slider {
+	width: 400px;
+	height: 300px;
+  overflow: hidden;
+}
+
+
+#photo {
+	width: 1200px;
+	animation: switch 5s ease-out infinite;
+}
+
+#photo > img {
+  float: left;
+	width: 400px;
+	height: 300px;
+}
+
+
+@keyframes switch {
+	0%, 25% {
+		margin-left: 0;
+	}
+	35%, 60% {
+		margin-left: -400px;
+	}
+	70%, 100% {
+		margin-left: -800px;
+	}
+}
+
+
+/* .food-image {
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 150px;
+  width: 300px;
+  border: 1px solid #FFFFFF;
+} */
+/* 
+.w3-display-left{
+  color: #fff!important;
+  background-color: #000!important;
+  border: none;
+  position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+} */
+
+
+/* icons*/
+.fab{
+  size = 20px;
+}
+
+
+
+
 
 
 
