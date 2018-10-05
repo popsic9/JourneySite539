@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+h1{
+  color: #624630;
+  font-family: 'Indie Flower', cursive;
+}
+
+h2{
+  color: #624630;
+  font-family: 'Indie Flower', cursive;
+}
+
+h3{
+  color: #624630;
+  font-family: 'Indie Flower', cursive;
+}
+
 body {
   background-color: rgb(150, 149, 149);
   color: rgb(48, 45, 45);
@@ -176,14 +191,14 @@ nav {
   transition: background-color 100ms linear;
 }
 
+
+
 .section h2{
-  color: #624630;
-  font-size: 20px;
+  font-size: 30px;
   margin: 20px;
 }
 .section h1{
-  color: #624630;
-  font-size: 30px;
+  font-size: 40px;
   margin: 20px;
   text-align: center;
 }
@@ -251,6 +266,7 @@ nav {
   color: #624630;
   font-size: 35px;
   margin-top: 10px;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
 }
 
