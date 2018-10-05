@@ -180,8 +180,14 @@ nav {
   color: #624630;
   font-size: 20px;
   margin: 20px;
-  
 }
+.section h1{
+  color: #624630;
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
 
 
 
