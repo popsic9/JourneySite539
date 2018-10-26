@@ -1,0 +1,173 @@
+
+/* iphone8 plus: landscape */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape){
+    nav{
+      flex-direction: row;
+    }
+    .navbar a{
+      padding: 14px 16px;
+    }
+    .dropdown:hover .dropdown-content{
+      flex-direction: column;
+    }
+    .dropdown .dropbtn {
+      padding: 14px 16px;
+    }
+    .dropdown-content{
+      text-align: left;
+      position: absolute;
+    }
+
+    #sidenavbar{
+        display: block;
+    }
+
+    .container > header{
+      height: 170px;
+    }
+    .container > header p {
+      font-size: 1.7em;
+      margin-left: 50px;
+    }
+  
+    h2{
+      text-align: left;
+    }
+    .items{
+      flex-direction: row;
+    }
+  
+    .item1{
+      flex:35%;
+    }
+    .item2{
+      flex:75%;
+    }
+  
+    .item4{
+      flex: none;
+      margin-left: 20px;
+    }
+  
+    #self-image {
+      height: 150px;
+    }
+    .row{
+      flex-direction:column;
+    }
+    .side{
+      display: none;
+    }
+
+    .icon-index{
+        margin-left: 40px;
+    }
+    .grid-container{
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+    }
+    .grid-item {
+    padding: 5px;
+    }
+    .city_disctiption{
+    text-align:left;
+    margin-left: 70px;
+    }
+
+
+  }
+  
+  
+  
+  @media only screen and (min-width: 800px){
+    h1{
+      font-size: 35px;
+    }
+    h2{
+      font-size: 25px;
+      text-align: left;
+    }
+    nav{
+      /* position: fixed; */
+      flex-direction: row;
+    }
+  
+    #sidenavbar{
+        display: block;
+    }
+    .navbar a{
+      text-align: left;
+      padding: 14px 16px;
+    }
+    .dropdown:hover .dropdown-content{
+      display: block;
+      flex-direction: column;
+    }
+    .dropdown .dropbtn {
+      padding: 14px 16px;
+    }
+    .dropdown-content{
+      text-align: left;
+      /* position: static; */
+      position: absolute;
+    }
+    .container {
+      margin: 5px auto;
+      max-width: 1200px;
+      min-width: 700px;
+    }
+    .container > header{
+      height: 360px;
+    }
+    .container > header p {
+      font-size: 2em;
+      margin-left: 150px;
+    }
+    
+    .row{
+      flex-direction:row;
+    }
+    .side{
+      display: block;
+    }
+    .items{
+      flex-direction: row;
+    }
+  
+    .item4{
+      flex: none;
+    }
+  
+    #self-image {
+      height: 250px;
+    }
+    .icon-index{
+      margin-left: 40px;
+    }
+    .grid-container{
+      grid-template-columns: 40% 60%;
+      grid-row-gap: 50px;
+    }
+    .grid-item {
+      padding: 20px;
+    }
+    .city_disctiption{
+      text-align:left;
+      margin-left: 70px;
+    }
+    #food-slider{
+      width: 400px;
+      height: 300px;
+    }
+    #photo > img {
+      width: 400px;
+      height: 300px;
+    }
+    footer{
+      height: 100px;
+      margin-top: 50px;
+    }
+    footer ul{
+      display: flex;
+    }
+  }

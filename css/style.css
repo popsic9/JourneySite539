@@ -1,3 +1,5 @@
+/* for iphone 8 plus */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,33 +7,41 @@
 }
 
 h1{
-  color: #624630;
   font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+  margin: 20px;
+  text-align: center;
 }
 
 h2{
-  color: #624630;
   font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
 }
 
 h3{
-  color: #624630;
   font-family: 'Indie Flower', cursive;
+}
+
+ul {
+  /* no point for lists*/
+  list-style: none;
+}
+p{
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 body {
   background-color: rgb(150, 149, 149);
-  color: rgb(48, 45, 45);
+  color: #624630;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 0.9em;
 }
 
 
-ul {
-  /* no point for lists*/
-  list-style: none;
-}
 
 .icon > li{
   display: inline-block;
@@ -45,7 +55,7 @@ ul {
 }
 
 .icon-index {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 /* Nav Container */
@@ -57,23 +67,28 @@ nav {
     top: 0;
     width: 100%;
     display: flex;
+    flex-direction: column;
     box-shadow: 0px 2px 10px #333333;
 }
+
 
 /* Links inside the navbar */
 .navbar a {
     float: left;
     font-size: 16px;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 10px 20px;
     text-decoration: none;
   }
+
 
 /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
+    /* position: static;
+    display: inline-block; */
   }
 
 
@@ -83,7 +98,7 @@ nav {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 20px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
@@ -98,7 +113,7 @@ nav {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: rgb(236, 225, 159);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -124,35 +139,67 @@ nav {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
 
 
+#sidenavbar {
+  display: none;
+  /* overflow: hidden; */
+  background-color: rgb(252, 224, 155);
+  position: fixed;
+  margin-top: -20px;
+  right: 0px;
+}
+
+#sidenavbar a {
+  display: block;
+  color: #2b1212;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#sidenavbar a:hover {
+  background-color: rgb(247, 222, 83);
+  color: black;
+}
+
+#sidenavbar a.active {
+  background-color: rgb(243, 211, 32);
+  color: white;
+}
+  
+
+
+
 .container {
-  margin: 5px auto ;
-  max-width: 1200px;
-  min-width: 700px;
+  margin: 0;
+  min-width: 100%;
 }
 
 .container > header{
-  height: 360px;
+  height: 220px;
   background: 
     url("../images/homepage.jpg")
-    no-repeat 50% 50%;
+    no-repeat;
   background-color: emonchiffon;
   display: flex;
   align-items: center;
-  background-size: 100%;
+  background-size: cover;
 }
+
 
 
 .container > header p {
   color: black;
-  font-family: 'Crafty Girls';font-size: 22px;
+  font-family: 'Crafty Girls';
   font-weight: 400;
-  font-size: 2em;
-  margin-left: 150px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-left: 20px;
   /* line */
   border-left: 1px solid white;
   padding-left: 5px;
@@ -164,25 +211,22 @@ nav {
 
 
 
-
 .row {  
   display: flex;
+  flex-direction:column;
   flex-wrap: wrap;
 }
 
 .side {
+  display: none;
   flex: 25%;
   background-color: rgb(243, 227, 186);
   padding: 20px;
 }
 
-.main-section{
-  flex: 75%;
-  background-color: #F2EBD9;
-  border-bottom: 1px solid white;
-  padding: 20px;
-  transition: background-color 100ms linear;
-}
+
+
+
 
 .section{
   background-color: #F2EBD9;
@@ -191,31 +235,47 @@ nav {
   transition: background-color 100ms linear;
 }
 
-
-
-.section h2{
-  font-size: 30px;
-  margin: 20px;
-}
-.section h1{
-  font-size: 40px;
-  margin: 20px;
-  text-align: center;
+.items{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
+.item4{
+  flex: 50%;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.main-section{
+  flex: 75%;
+}
+
+#self-image {
+  /* margin-left: 50px; */
+  object-fit: cover;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  height : 200px;
+}
 
 
 .grid-container {
   display: grid;
-  grid-row-gap: 50px;
-  grid-template-columns: 40% 60%;
+  grid-row-gap: 20px;
   padding: 10px;
+  align-items: center;
 }
 
 .grid-item {
-  padding: 20px;
+  justify-self:center;
+  padding: 0px;
 }
+
+
+
+
 
 .city-hover a img{
   -webkit-transform: scale(1);
@@ -230,31 +290,16 @@ nav {
 }
 
 
-.intro{
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.img{
-  flex: 40%;
-}
-#self-image {
-  margin-left: 50px;
-  height: 250px;
-  border: 1px solid #FFFFFF;
-}
+
+
 .city-image {
+  object-fit: cover;
   height: 150px;
-  width: 300px;
+  width:100%;
   border: 1px solid #FFFFFF;
 }
 
-.words{
-  flex: 60%;
-  color: #624630;
-  font-weight: 400;
-  line-height: 20px;
-}
 
 .self-words{
   font-family: 'Annie Use Your Telescope';
@@ -262,31 +307,20 @@ nav {
   margin-top: 20px; 
 }
 
-.title {
-  color: #624630;
-  font-size: 35px;
-  margin-top: 10px;
-  font-family: 'Indie Flower', cursive;
-  text-align: center;
-}
-
-
-
-
 
 .city_disctiption{
-  color: #624630;
-  text-align:left;
+  text-align:center;
   margin-top: 30px;
-  margin-left: 70px;
-  
+  margin-left: 0px;
 }
-
 
 
 #food-slider {
-	width: 400px;
-	height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 225px;
   overflow: hidden;
 }
 
@@ -298,9 +332,10 @@ nav {
 
 #photo > img {
   float: left;
-	width: 400px;
-	height: 300px;
+  width: 400px;
+  height: 225px;
 }
+
 
 
 @keyframes switch {
@@ -315,35 +350,6 @@ nav {
 	}
 }
 
-
-/* .food-image {
-  margin-top: 50px;
-  margin-left: 50px;
-  height: 150px;
-  width: 300px;
-  border: 1px solid #FFFFFF;
-} */
-/* 
-.w3-display-left{
-  color: #fff!important;
-  background-color: #000!important;
-  border: none;
-  position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(-0%,-50%);
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-} */
 
 
 /* icons*/
@@ -365,25 +371,13 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* 4. footer*/
 footer {
   background: rgb(150, 149, 149);
   font-size:  1em;
-  height:     200px;
+  height:     0px;
   position:   relative;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 footer p {
   text-align: center;
@@ -391,7 +385,7 @@ footer p {
 
 
 footer ul {
-  display: flex;
+  display: inline;
   align-items: center;
   padding: 20px;
 }
@@ -399,3 +393,14 @@ footer ul {
 footer ul li {
    flex: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
