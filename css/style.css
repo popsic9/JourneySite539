@@ -373,7 +373,7 @@ nav {
 
 /* 4. footer*/
 footer {
-  background: rgb(218, 216, 216);
+  background: rgb(150, 149, 149);
   font-size:  1em;
   height:     0px;
   position:   relative;
@@ -381,7 +381,7 @@ footer {
 }
 footer p {
   text-align: center;
-  color:  rgb(27, 27, 26);
+  color:  white;
 }
 
 
