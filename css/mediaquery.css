@@ -170,4 +170,37 @@
     footer ul{
       display: flex;
     }
+
+
+
+    .gallery{
+      grid-template-columns: 1fr 1fr;
+    }
+    .food-gall{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .country-btn button{
+      display:inline-block;
+      padding:0.35em 1.2em;
+      margin:0 0.3em 0.3em 0;
+      border-radius:0.12em;
+      font-weight:300;
+    }
+
+    .bouncy{
+      animation: bouncy 3s infinite linear;
+      position:relative;
+    }
+    
+    @keyframes bouncy {
+      0%   {top: 0em;}
+      40%  {top: 0em;}
+      43%  {top: -0.9em;}
+      46%  {top: 0em;}
+      48% {top: -0.4em;}
+      50% {top: 0em;}
+      100% {top: 0em;}
+    }
+
   }

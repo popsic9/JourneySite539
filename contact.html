@@ -15,7 +15,7 @@
 
 <body>
   <nav class="navbar">
-      <a class="active" href = "index.html">HOME</a>
+      <a href = "index.html">HOME</a>
       <div class="dropdown">
                 <button class="dropbtn">ASIA 
                   <i class="fa fa-caret-down"></i>
@@ -44,7 +44,7 @@
                   <a href="nevada.html">NEVADA</a>
                 </div>
         </div>
-      <a href = "contact.html">CONTACTS</a>
+      <a class="active" href = "contact.html">CONTACTS</a>
     </nav>
 
 
@@ -57,26 +57,61 @@
     </p>
   </header>
 
+
+
 <main>
-<div class="section home">
-    <h1><b>Introduction</b></h1>
-    <h2><b>ABOUT ME</b></h2>
-    <div class="items">
-      <div class="item1"><img id="self-image" src="images/profile.jpeg" alt = ""/></div>
-      <div class="self-words item2"><p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. Through all the places I have seen around the world, there is not a best way to share my experience. Save this website and follow my step to discover the world!</p>  </div>        
-    </div>
-    <h2><b>MY LINKS</b></h2>
-    <div class="items icon icon-index">
-      <div class="item4">
-          <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
-      </div>
-      <div class="item4">
-          <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
-      </div>
-    </div>
-</div>
-</main>
-</div>
+        <div class="row">
+            <div class="side">
+                <br>
+                <h2>About Me</h2><br>
+                <div><img src="images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
+                <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                <br><br><br>
+                <h3>My Links</h3><br>
+                <ul class="icon">
+                    <li>
+                        <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-3x"></i><span class="sr-only">linkedin</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-3x"></i><span class="sr-only">github</span></a>
+                    </li>
+                </ul>
+                
+            </div>
+        <div class="section main-section">
+        <h1 class="title">Contact Me</h1>
+            <form action='/contact' method="POST">
+                <fieldset class="contact-info">
+                <!-- <legend>Login</legend> -->
+                    <label for="name">
+                        Name
+                        <input class="form-control" name="name" id="name" type="text" required>
+                    </label> 
+                        
+                    <label for="email">
+                        Email address
+                        <input class="#" name="email" id="email" type="email" placeholder="name@domain.com" required>
+                    </label> 
+
+                    <label for="message">
+                        Message
+                        <textarea class="#" name="message" id="message" placeholder=""></textarea>
+                    </label> 
+                </fieldset>
+
+                <fieldset class="contact-action">
+                    <input class="btn" type="submit" name="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
+        </div>
+        </div>
+        </main>
+
+
+
+
+
 
 
 

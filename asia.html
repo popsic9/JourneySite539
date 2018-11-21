@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <!-- Navigation Bar -->
@@ -79,48 +81,32 @@
             </ul>
         </div>
         <div class="section main-section">
-            <h1 class="title">Asia: China</h1>
-                <div class="grid-container">
-                    <div class="grid-item city-hover">
-                            <a href="china/shanghai.html">
-                                <img class="city-image" src="images/asia/china/shanghai/shanghai.jpg" alt = "shanghai"/>
-                            </a>
-                    </div>
-                    <div class="grid-item">
-                        <p><b>Shanghai</b> is one of the four municipalities under the direct administration of the central government of China, with a population of more than 24 million as of 2017. It’s a global financial center and transport hub. It’s also my home town. I have lived there for almost 22 years.</p>      
-                    </div>
-                </div>
-                <div class="grid-container">
-                        <div class="grid-item city-hover">
-                                <a href="china/beijing.html">
-                                    <img class="city-image" src="images/asia/china/beijing/beijing.jpg" alt = "beijing"/>
-                                </a>
-                        </div>
-                        <div class="grid-item">
-                                <p><b>Beijing</b> is China’s capital city. It was first established around 3,000 years ago and has historically been the capital of the nation for more than 800 years. This place has a long and storied history and culture.</p>      
-                        </div>
-                </div>
-                <div class="grid-container city-hover">
-                        <div class="grid-item">
-                                <a href="china/chengdu.html">
-                                    <img class="city-image" src="images/asia/china/chengdu/chengdu.jpg" alt = "chengdu"/>
-                                </a>
-                        </div>
-                        <div class="grid-item">
-                                <p><b>Chengdu</b> is a city on the rise. It has a unique cuisine with a huge number of hot and spicy dishes, as well as an enviously relaxed pace of life.</p>      
-                        </div>
-                </div>
+            <h1 class="title">Asia</h1>
+            <div class="country-btn">
+                <button class="bouncy" type="button" data-filter="all">All</button>
+                <button class="bouncy" style="animation-delay:0.07s" type="button" data-filter=".category-c">China</button>
+                <button class="bouncy" style="animation-delay:0.14s" type="button" data-filter=".category-j">Japan</button>
+                <button class="bouncy" style="animation-delay:0.21s" type="button" data-sort="random">Random</button>
+            </div>
+            <div class = "gallery city-hover">
+                <a class="mix category-c" data-order="1" href="china/shanghai.html"><img class="city-image" src="images/asia/china/shanghai/shanghai.jpg" alt="Shanghai"></a>
+                <a class="mix category-c" data-order="2" href="china/beijing.html"><img class="city-image" src="images/asia/china/beijing/beijing.jpg" alt="Beijing"></a>
+                <a class="mix category-c" data-order="3" href="china/chengdu.html"><img class="city-image" src="images/asia/china/chengdu/chengdu.jpg" alt="Chengdu"></a>
+                <a class="mix category-j" data-order="4" href="japan/tokyo.html"><img class="city-image" src="images/asia/japan/tokyo/tokyo.jpg" alt="Tokyo"></a>
+            </div>
         </div>
     </div>
 </main>
 </div>
 
-<footer>
-    <p>"Show my best travel experience with you."</p>
-    <ul>
-        <li><p>CHEN SUN</p></li>
-        <li><p>sunche@umich.edu</p></li>
-    </ul>
-</footer>
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+    </footer>
+    <script src="js/mixitup.min.js"></script>
+	<script src="js/mixitup.js"></script>
 </body>
 </html>

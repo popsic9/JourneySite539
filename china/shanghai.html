@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css"> 
     <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
         <a href="../nevada.html">NEVADA</a>
       </div>
     </div>
-    <a href = "#">CONTACTS</a>
+    <a href = "contact.html">CONTACTS</a>
   </nav>
 
 
@@ -55,7 +56,7 @@
             <br /> Since 2005
         </p>
     </header>
-
+    <main>
     <div class="row">
         <div class="side">
             <br>
@@ -81,84 +82,57 @@
         <a href="#landscape">Landscape</a>
         <a href="#food">Food</a>
     </div>
+
     <h1 class="title">China: Shanghai</h1>
-
-<div id="landscape">
-    <h2 class="city_disctiption"> Landscapes </h2>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/shanghai/shanghai_bund.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p><b>The Bund</b>  is a walking tour between Baidu Bridge and Jinling East Road outside the west bank of Huangpu in Shanghai. At night, the two sides of the Pujiang River are lit with neon lights, and it is suitable for strolling with your lover on the Bund, feeling the charm and romance of “Never Sleeping City”. </p>      
+    <div id="landscape">
+        <h2 class="city_disctiption"> Landscapes </h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="city-image" src="../images/asia/china/shanghai/shanghai_bund.jpg" alt = ""/>
+            </div>
+            <div class="grid-item">
+                <p><b>The Bund</b>  is a walking tour between Baidu Bridge and Jinling East Road outside the west bank of Huangpu in Shanghai. At night, the two sides of the Pujiang River are lit with neon lights, and it is suitable for strolling with your lover on the Bund, feeling the charm and romance of “Never Sleeping City”. </p>      
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="city-image" src="../images/asia/china/shanghai/shanghai_ifc.jpg" alt = ""/>
+            </div>
+            <div class="grid-item">
+                <p class="words"><b>The Shanghai World Financial Center</b> stands in the Lujiazui Finance and Trade Zone and is similar in shape to a bottle opener. Boarding the 100-story sightseeing hall, you can look directly at the peak of the Oriental Pearl Tower.</p>      
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="city-image" src="../images/asia/china/shanghai/shanghai_orien.jpg" alt = ""/>
+            </div>
+            <div class="grid-item">
+                <p class="words"><b>The Oriental Pearl Tower,</b> 468 meters high, is located in Shanghai's Lujiazui Financial Quarter. It faces the Bund across the river and is one of Shanghai's landmark buildings.</p>      
+            </div>
         </div>
     </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/shanghai/shanghai_ifc.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>The Shanghai World Financial Center</b> stands in the Lujiazui Finance and Trade Zone and is similar in shape to a bottle opener. Boarding the 100-story sightseeing hall, you can look directly at the peak of the Oriental Pearl Tower.</p>      
-          </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/shanghai/shanghai_orien.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>The Oriental Pearl Tower,</b> 468 meters high, is located in Shanghai's Lujiazui Financial Quarter. It faces the Bund across the river and is one of Shanghai's landmark buildings.</p>      
-          </div>
-    </div>
-</div>
-<div id="food">
-    <h2 class="city_disctiption"> Foods </h2>
+    <div id="food">
+        <h2 class="city_disctiption"> Foods </h2>
 
-    <div id="food-slider">
-        <div id="photo">
-            <img src="../images/asia/china/shanghai/congee.jpg" alt = ""/>
-            <img src="../images/asia/china/shanghai/crawfish.jpg" alt = ""/>
-            <img src="../images/asia/china/shanghai/hairycrab.jpg" alt = ""/>
+        <!-- <div id="food-slider">
+            <div id="photo">
+                <img src="../images/asia/china/shanghai/congee.jpg" alt = ""/>
+                <img src="../images/asia/china/shanghai/crawfish.jpg" alt = ""/>
+                <img src="../images/asia/china/shanghai/hairycrab.jpg" alt = ""/>
+            </div>
+        </div> -->
+        <div class = "gallery food-gall">
+                <a href="../images/asia/china/shanghai/congee.jpg" data-lightbox="pic" ><img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee"></a>
+                <a href="../images/asia/china/shanghai/crawfish.jpg" data-lightbox="pic"><img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish"></a>
+                <a href="../images/asia/china/shanghai/hairycrab.jpg" data-lightbox="pic"><img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab"></a>
         </div>
     </div>
 
-    <!-- <div class="w3-content w3-display-container">
-        <img class="food-image" src="../images/Asia/China/Shanghai/Congee.jpg" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/Crawfish.jpg" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/HairyCrab.jpg" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/Hongshaorou.jpeg" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/Mini_wontons_in_soup.jpeg" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/Shengjianbao.jpg" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/SmokedFish.JPG" style="width:25%">
-        <img class="food-image" src="../images/Asia/China/Shanghai/Xiaolongbao.jpg" style="width:25%">
-      
-        <button class="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      </div>
-    
-      <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-      </script> -->
-</div>
-</div>
 </div>
 </div>
 
+</main>
+</div>
 
 
 
@@ -169,5 +143,8 @@
         <li><p>sunche@umich.edu</p></li>
     </ul>
 </footer>
+
+
+<script src="../js/lightbox.js"></script>
 </body>
 </html>
