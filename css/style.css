@@ -158,7 +158,8 @@ nav {
   background-color: rgb(252, 224, 155);
   position: fixed;
   margin-top: -20px;
-  right: 0px;
+  /* right: 0px; */
+  left: 0px;
 }
 
 #sidenavbar a {

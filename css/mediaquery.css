@@ -18,9 +18,7 @@
       position: absolute;
     }
 
-    #sidenavbar{
-        display: block;
-    }
+
 
     .container > header{
       height: 170px;
@@ -188,10 +186,9 @@
 
 
 
-    .gallery{
-      display: none;
-    }
+    
 
+    
 
     .country-btn button{
       display:inline-block;
@@ -308,4 +305,13 @@
       max-height: 100%;
       overflow: visible;
     }
+
+    .gallery{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .gall-food{
+      display: none;
+    }
+
   }

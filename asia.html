@@ -6,6 +6,7 @@
     <title>China</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/jumptocontent.css"> 
     <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
@@ -34,8 +35,9 @@
         </p>
     </header>
     <main>
+        <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
     
-    <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()"><p>Show my information</p></button>
+        <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()"><p>Show my information</p></button>
 
     <div class="row">
         <div id="sideIntro" class="side">
@@ -148,5 +150,6 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/mixitup.js"></script>
     <script type="text/javascript" src="js/side-intro.js"></script>
+    <script type="text/javascript" src="js/jumptocontent.js"></script>
 </body>
 </html>
