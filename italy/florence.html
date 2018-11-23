@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a href = "../asia.html">ASIA</a>
+            <a class="active" href = "../europe.html">EUROPE</a>
+            <a class="active" href = "../italy/florence.html">FLORENCE</a>
+            <a href = "../northamerica.html">NORTH AMERICA</a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
+
+
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = "myself"/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">Italy: Florence</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">Uffizi</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/italy/florence/uffizigallery.jpg" alt = "Uffizi"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>Uffizi</b>  is a prominent art museum located adjacent to the Piazza della Signoria in the Historic Centre of Florence in the region of Tuscany, Italy. One of the most important Italian museums, and the most visited, it is also one of the largest and best known in the world, and holds a collection of priceless works, particularly from the period of the Italian Renaissance.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Florence Cathedral</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/italy/florence/santamariadelfiore.jpg" alt = "Florence Cathedral"/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>Florence Cathedral</b> is the cathedral of Florence, Italy (Italian: Duomo di Firenze). It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome designed by Filippo Brunelleschi. The exterior of the basilica is faced with polychrome marble panels in various shades of green and pink, bordered by white, and has an elaborate 19th-century Gothic Revival façade by Emilio De Fabris.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Ponte Vecchio</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/italy/florence/oldbridge.jpg" alt = "Ponte Vecchio"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Ponte Vecchio</b> is a medieval stone closed-spandrel segmental arch bridge over the Arno River, in Florence, Italy, noted for still having shops built along it, as was once common. Butchers initially occupied the shops; the present tenants are jewelers, art dealers and souvenir sellers. The Ponte Vecchio's two neighbouring bridges are the Ponte Santa Trinita and the Ponte alle Grazie.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/europe/italy/florence/bisteccaallafiorentina.jpg" data-lightbox="pic" title="Anettone" ><img src="../images/europe/italy/florence/bisteccaallafiorentina.jpg" alt="Bistecca Alla Fiorentina"></a>
+                                <a class="mobile-food land-food" href="../images/europe/italy/florence/lampredotto.JPG" data-lightbox="pic" title="Lampredotto"><img src="../images/europe/italy/florence/lampredotto.JPG" alt="Lampredotto"></a>
+                                <a class="mobile-food" href="../images/europe/italy/florence/tagliere.jpg" data-lightbox="pic" title="Tagliere"><img src="../images/europe/italy/florence/tagliere.jpg" alt="Tagliere"></a>
+                                <a class="mobile-food" href="../images/europe/italy/florence/crostini.jpg" data-lightbox="pic" title="Crostini"><img src="../images/europe/italy/florence/crostini.jpg" alt="Crostini"></a>
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/europe/italy/florence/bisteccaallafiorentina.jpg" alt="Bistecca Alla Fiorentina">
+                                </div>
+                                <div class="back">
+                                    <p>Bistecca Alla Fiorentina</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/europe/italy/florence/lampredotto.JPG" alt="Lampredotto">
+                                </div>
+                                <div class="back">
+                                    <p>Lampredotto</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/europe/italy/florence/tagliere.jpg" alt="Tagliere">
+                                </div>
+                                <div class="back">
+                                    <p>Tagliere</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/europe/italy/florence/crostini.jpg" alt="Crostini">
+                                </div>
+                                <div class="back">
+                                    <p>Crostini</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
+
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
+        });
+    </script>
+
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
+
+    </script>
+
+</body>
+</html>
