@@ -27,198 +27,182 @@
 <body>
     <nav class="navbar">
             <a href = "../index.html">HOME</a>
-            <a class="active" href = "../asia.html">ASIA </a>
+            <a class="active" href = "../asia.html">ASIA</a>
+            <a class="active" href = "../china/shanghai.html">SHANGHAI</a>
             <a href = "../asia.html">EUROPE </a>
             <a href = "../asia.html">NORTH AMERICA </a>
             <a href = "../contact.html">CONTACTS</a>
     </nav>
 
 
-  <div class="container">
-    <header>
-        <p>
-            <span>Chen's Journey Web Site</span>
-            <br /> Since 2005
-        </p>
-    </header>
-    <main>
-        <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
-        <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()"><p>Show my information</p></button>
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
 
-    <div class="row">
-        <div id="sideIntro" class="side">
-            <h2>About Me</h2><br>
-            <div class="grid-container grid-side">
-                <div class="grid-item">
-                    <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = ""/>
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = ""/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">China: Shanghai</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">The Bund</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_bund.jpg" alt = ""/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>The Bund</b>  is a walking tour between Baidu Bridge and Jinling East Road outside the west bank of Huangpu in Shanghai. At night, the two sides of the Pujiang River are lit with neon lights, and it is suitable for strolling with your lover on the Bund, feeling the charm and romance of “Never Sleeping City”. </p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">The Shanghai World Financial Center</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_ifc.jpg" alt = ""/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>The Shanghai World Financial Center</b> stands in the Lujiazui Finance and Trade Zone and is similar in shape to a bottle opener. Boarding the 100-story sightseeing hall, you can look directly at the peak of the Oriental Pearl Tower.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">The Oriental Pearl Tower</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_orien.jpg" alt = ""/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>The Oriental Pearl Tower,</b> 468 meters high, is located in Shanghai's Lujiazui Financial Quarter. It faces the Bund across the river and is one of Shanghai's landmark buildings.</p>      
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/asia/china/shanghai/congee.jpg" data-lightbox="pic" title="Congeee" ><img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee"></a>
+                                <a class="mobile-food land-food" href="../images/asia/china/shanghai/crawfish.jpg" data-lightbox="pic" title="Crawfish"><img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish"></a>
+                                <a class="mobile-food" href="../images/asia/china/shanghai/hairycrab.jpg" data-lightbox="pic" title="Hairycrab"><img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab"></a>
+                                <a class="mobile-food" href="../images/asia/china/shanghai/hongshaorou.jpeg" data-lightbox="pic" title="Hongshaorou"><img src="../images/asia/china/shanghai/hongshaorou.jpeg" alt="Hongshaorou"></a>
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee">
+                                </div>
+                                <div class="back">
+                                    <p>Congeee</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish">
+                                </div>
+                                <div class="back">
+                                    <p>Crawfish</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab">
+                                </div>
+                                <div class="back">
+                                    <p>Hairycrab</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/asia/china/shanghai/hongshaorou.jpeg" alt="Hongshaorou">
+                                </div>
+                                <div class="back">
+                                    <p>Hongshaorou</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-<div class="section main-section">
-    <div id="sidenavbar">
-        <a href="#landscape">Landscape</a>
-        <a href="#food">Food</a>
+        </main>
     </div>
 
-    <h1 class="title">China: Shanghai</h1>
-    <div id="landscape">
-        <h2 class="city_disctiption"> Landscapes </h2>
-
-        <button class="accordion">The Bund</button>
-        <div class="panel">
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_bund.jpg" alt = ""/>
-                    </div>
-                    <div class="grid-item">
-                        <p><b>The Bund</b>  is a walking tour between Baidu Bridge and Jinling East Road outside the west bank of Huangpu in Shanghai. At night, the two sides of the Pujiang River are lit with neon lights, and it is suitable for strolling with your lover on the Bund, feeling the charm and romance of “Never Sleeping City”. </p>      
-                    </div>
-                </div>
-        </div>
-
-        <button class="accordion">The Shanghai World Financial Center</button>
-        <div class="panel">
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_ifc.jpg" alt = ""/>
-                    </div>
-                    <div class="grid-item">
-                            <p class="words"><b>The Shanghai World Financial Center</b> stands in the Lujiazui Finance and Trade Zone and is similar in shape to a bottle opener. Boarding the 100-story sightseeing hall, you can look directly at the peak of the Oriental Pearl Tower.</p>      
-                    </div>
-                </div>
-        </div>
-
-        <button class="accordion">The Oriental Pearl Tower</button>
-        <div class="panel">
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_orien.jpg" alt = ""/>
-                    </div>
-                    <div class="grid-item">
-                        <p class="words"><b>The Oriental Pearl Tower,</b> 468 meters high, is located in Shanghai's Lujiazui Financial Quarter. It faces the Bund across the river and is one of Shanghai's landmark buildings.</p>      
-                    </div>
-                </div>
-        </div>
-    </div>
-
-
-    <div id="food">
-        <h2 class="city_disctiption"> Foods </h2>
-
-
-
-        <p class="mobile-title">Click image to see more</p>
-        <div class = "gallery gall-food">
-            
-                <a href="../images/asia/china/shanghai/congee.jpg" data-lightbox="pic" title="Congeee" ><img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee"></a>
-                <a class="mobile-food land-food" href="../images/asia/china/shanghai/crawfish.jpg" data-lightbox="pic" title="Crawfish"><img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish"></a>
-                <a class="mobile-food" href="../images/asia/china/shanghai/hairycrab.jpg" data-lightbox="pic" title="Hairycrab"><img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab"></a>
-                <a class="mobile-food" href="../images/asia/china/shanghai/hongshaorou.jpeg" data-lightbox="pic" title="Hongshaorou"><img src="../images/asia/china/shanghai/hongshaorou.jpeg" alt="Hongshaorou"></a>
-        </div>
-
-
-
-
-
-        <div class="foods-desk">
-            <div class="card"">
-                <div class="front">
-                    <img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee">
-                </div>
-                <div class="back">
-                    <p>Congeee</p>
-                </div>
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
             </div>
-            <div class="card">
-                <div class="front" >
-                        <img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish">
-                </div>
-                <div class="back">
-                    <p>Crawfish</p>
-                </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
             </div>
-            <div class="card">
-                <div class="front">
-                        <img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab">
-                </div>
-                <div class="back">
-                    <p>Hairycrab</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="front">
-                        <img src="../images/asia/china/shanghai/hongshaorou.jpeg" alt="Hongshaorou">
-                </div>
-                <div class="back">
-                    <p>Hongshaorou</p>
-                </div>
-            </div>
-
         </div>
-
-        </div>
-    </div>
-
-</div>
-</div>
-
-</main>
-</div>
+    </footer>
 
 
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
 
-<footer>
-    <p>"Show my best travel experience with you."</p>
-    <ul>
-        <li><p>CHEN SUN</p></li>
-        <li><p>sunche@umich.edu</p></li>
-    </ul>
-    <div class="items icon icon-index">
-        <div class="item4">
-            <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
-        </div>
-        <div class="item4">
-            <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
-        </div>
-    </div>
-</footer>
-
-
-<script type="text/javascript" src="../js/lightbox.js"></script>
-<script type="text/javascript" src="../js/side-intro.js"></script>
-<script type="text/javascript" src="../js/accordion.js"></script>
-<script type="text/javascript" src="../js/jumptocontent.js"></script>
-
-<script type="text/javascript">
-    // Flip Card
-    $(document).ready(function(){
-        $(".card").flip({
-            trigger: 'hover',
-            speed: '1000ms',
-            direction: 'lr',
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
         });
-    });
-</script>
+    </script>
 
-<script type="text/javascript">
-    // Light Box
-    // var text = document.getElementById
-    lightbox.option({
-      'resizeDuration': 600,
-      'wrapAround': true,
-      'alwaysShowNavOnTouchDevices': true,
-      'albumLabel':'Food Image %1 of %2'
-    })
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
 
-</script>
-
-
-
+    </script>
 
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css"> 
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/modals.css">
+    <link rel="stylesheet" type="text/css" href="css/jumptocontent.css"> 
     <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet'>
@@ -14,9 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
 </head>
 
 <body>
@@ -28,75 +26,69 @@
             <a class="active" href = "contact.html">CONTACTS</a>
     </nav>
 
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br/> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <div class="row">
+                <div class="side">
+                    <br>
+                    <h2>About Me</h2><br>
+                    <div><img src="images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
+                    <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                </div>
+                <div class="section main-section">
+                    <h1 class="title">Contact Me</h1>
+                    <h2 style="text-align: center;">Openning Soon</h2>
+                    <form action='/contact' method="POST">
+                        <fieldset class="contact-info">
+                            <label for="name">
+                                Name
+                                <input class="form-control" name="name" id="name" type="text" required>
+                            </label> 
+                                
+                            <label for="email">
+                                Email address
+                                <input class="#" name="email" id="email" type="email" placeholder="name@domain.com" required>
+                            </label> 
 
+                            <label for="message">
+                                Message
+                                <textarea class="#" name="message" id="message" placeholder=""></textarea>
+                            </label> 
+                        </fieldset>
 
-<div class="container">
-  <header>
-    <p>
-        <span>Chen's Journey Web Site</span>
-        <br/> Since 2005
-    </p>
-  </header>
-
-
-
-<main>
-        <div class="row">
-            <div class="side">
-                <br>
-                <h2>About Me</h2><br>
-                <div><img src="images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
-                <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        <fieldset class="contact-action">
+                            <input id="myBtn" class="btn" type="submit" name="submit" value="Send">
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h1>Warning!</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>The web site is still under development </p>
+                                        <br>
+                                        <p>Contact Function Will Be Openning Soon.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h2 style="text-align:center;">Sorry For That</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
-        <div class="section main-section">
-        <h1 class="title">Contact Me</h1>
-            <h2 style="text-align: center;">Openning Soon</h2>
-            <form action='/contact' method="POST">
-                <fieldset class="contact-info">
-                    <label for="name">
-                        Name
-                        <input class="form-control" name="name" id="name" type="text" required>
-                    </label> 
-                        
-                    <label for="email">
-                        Email address
-                        <input class="#" name="email" id="email" type="email" placeholder="name@domain.com" required>
-                    </label> 
-
-                    <label for="message">
-                        Message
-                        <textarea class="#" name="message" id="message" placeholder=""></textarea>
-                    </label> 
-                </fieldset>
-
-                <fieldset class="contact-action">
-                    <input id="myBtn" class="btn" type="submit" name="submit" value="Send">
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <span class="close">&times;</span>
-                                <h1>Warning!</h1>
-                            </div>
-                            <div class="modal-body">
-                                <p>The web site is still under development </p>
-                                <br>
-                                <p>Contact Function Will Be Openning Soon.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <h2 style="text-align:center;">Sorry For That</h2>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-        </div>
-        </div>
         </main>
+    </div>
     <footer>
         <p>"Show my best travel experience with you."</p>
         <ul>
@@ -112,6 +104,7 @@
                 </div>
             </div>
     </footer>
-    <script type="text/javascript" src="js/modal.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jumptocontent.js"></script>
 </body>
 </html>
