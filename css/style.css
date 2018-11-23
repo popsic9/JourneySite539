@@ -73,7 +73,6 @@ nav {
 
 
 
-/* Links inside the navbar */
 .navbar a {
     float: left;
     font-size: 16px;
@@ -90,64 +89,10 @@ nav {
   }
 
 
-/* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
-    /* position: static;
-    display: inline-block; */
-  }
 
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px; 
-    border: none;
-    outline: none;
-    color: white;
-    padding: 10px 20px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-
-/* Add a yellow background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(247, 222, 83);
-  }
-  
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: relative;
-    background-color: rgb(236, 225, 159);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: rgb(12, 12, 12);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color:  rgb(247, 222, 83);
-  }
-
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: row;
   }
 
 
@@ -155,16 +100,18 @@ nav {
 #sidenavbar {
   display: none;
   /* overflow: hidden; */
-  background-color: rgb(252, 224, 155);
+  background-color: rgb(250, 176, 92);
   position: fixed;
   margin-top: -20px;
-  /* right: 0px; */
+
   left: 0px;
+  border-radius: 4px;
 }
 
 #sidenavbar a {
   display: block;
-  color: #2b1212;
+  color: black;
+  font-weight: 350;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -176,8 +123,8 @@ nav {
 }
 
 #sidenavbar a.active {
-  background-color: rgb(243, 211, 32);
-  color: white;
+  background-color: rgb(247, 222, 83);
+  color: black;
 }
   
 
@@ -215,7 +162,7 @@ nav {
 }
 
 .container > header p span{
-  color: white;
+  color: black;
 }
 
 
@@ -289,6 +236,7 @@ nav {
 
 .grid-container {
   display: grid;
+  background-color: rgba(255, 255, 255, 0.822);
   grid-row-gap: 20px;
   padding: 10px;
   align-items: center;
@@ -370,7 +318,7 @@ nav {
 .gallery{
 	width: 100%;
 	margin:0 auto;
-	display: grid;
+  display: grid;
 	grid-template-columns: 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 30px;

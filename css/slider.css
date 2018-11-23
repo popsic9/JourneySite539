@@ -16,6 +16,7 @@ cursor: pointer;
 
 .card div{
     background: rgb(243, 209, 186);  
+    /* background: rgba(91, 145, 31, 0.979); */
 }
 
 .card div p {

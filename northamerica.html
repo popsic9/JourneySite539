@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North America</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/jumptocontent.css"> 
+    <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<!-- Navigation Bar -->
+<body>
+    <nav class="navbar">
+            <a href = "index.html">HOME</a>
+            <a href = "asia.html">ASIA</a>
+            <a href = "europe.html">EUROPE</a>
+            <a class="active" href = "northamerica.html">NORTH AMERICA</a>
+            <a href = "contact.html">CONTACTS</a>
+    </nav>
+
+<div class="container">
+    <header>
+        <p>
+            <span>Chen's Journey Web Site</span>
+            <br/> Since 2005
+        </p>
+    </header>
+    <main>
+        <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+    
+        <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+    <div class="row">
+        <div id="sideIntro" class="side">
+            <h2>About Me</h2><br>
+            <div class="grid-container grid-side">
+                <div class="grid-item">
+                    <img src="images/profile.jpeg" style="height:auto; width:100%;" alt = ""/>
+                </div>
+                <div class="grid-item">
+                    <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                </div>
+            </div>
+        </div>
+        <div class="section main-section">
+            <h1 class="title">Europe</h1>
+            <div class="country-btn">
+                <button class="bouncy" type="button" data-filter="all">All</button>
+                <button class="bouncy" style="animation-delay:0.07s" type="button" data-filter=".category-c">Califorina</button>
+                <button class="bouncy" style="animation-delay:0.14s" type="button" data-filter=".category-n">Nevada</button>
+                <button class="bouncy" style="animation-delay:0.21s" type="button" data-sort="random">Random</button>
+            </div>
+            <div class = "gallery city-hover">
+                <div class="mix category-c" data-order="1">
+                    <a href="califorina/losangeles.html">
+                        <div class="wrap">
+                            <img class="city-image" src="images/northamerica/california/la/la.jpg" alt="Los Angeles">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <div>Los Angeles</div>
+                                    <p>The largest city in California and the second largest metropolitan area in the United States. It is not only a world-renowned entertainment center, but alos a city with a strong cultural atmosphere.</p>
+                                </div>
+                            </div>
+                            <div class="mobile-adgest"><div>Los Angeles</div></div>
+                        </div>
+                    </a>
+                    <div class="mobile-adgest">
+                            <p>The largest city in California and the second largest metropolitan area in the United States. It is not only a world-renowned entertainment center, but alos a city with a strong cultural atmosphere.</p>
+                    </div>
+                </div>
+
+                <div class="mix category-n" data-order="2">
+                    <a href="nevada/lasvegas.html">
+                        <div class="wrap">
+                            <img class="city-image" src="images/northamerica/nevada/lasvegas/las_vegas.jpg" alt="Las Vegas">
+                            <div class="overlay">
+                                <div class="overlay-text"><div>Las Vegas</div>
+                                    <p>Nevada’s most famous holiday city. You can take advantage of the top-quality services provided by luxury resort hotels or take in a world-class performance.</p>
+                                </div>
+                            </div>
+                            <div class="mobile-adgest"><div>Las Vegas</div></div>
+                        </div>
+                    </a>
+                    <div class="mobile-adgest">
+                        <p>Nevada’s most famous holiday city. You can take advantage of the top-quality services provided by luxury resort hotels or take in a world-class performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script src="js/side-intro.js"></script>
+    <script src="js/jumptocontent.js"></script>
+</body>
+</html>

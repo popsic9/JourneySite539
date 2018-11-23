@@ -237,7 +237,8 @@
       width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(255, 255, 255, 0.815);
+
     }
     
     .gallery .overlay:hover {
@@ -245,7 +246,8 @@
     }
     
     .overlay-text {
-      color: white;
+      background-color: rgba(255, 255, 255, 0.815);
+      color: black;
       font-family: 'Raleway', sans-serif;
       font-size: 20px;
       position: relative;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/modals.css">
     <link rel="stylesheet" type="text/css" href="css/jumptocontent.css"> 
     <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
@@ -35,13 +36,19 @@
         </header>
         <main>
             <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
             <div class="row">
-                <div class="side">
-                    <br>
-                    <h2>About Me</h2><br>
-                    <div><img src="images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
-                    <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
-                </div>
+                <div id="sideIntro" class="side">
+                        <h2>About Me</h2><br>
+                        <div class="grid-container grid-side">
+                            <div class="grid-item">
+                                <img src="images/profile.jpeg" style="height:auto; width:100%;" alt = ""/>
+                            </div>
+                            <div class="grid-item">
+                                <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                            </div>
+                        </div>
+                    </div>
                 <div class="section main-section">
                     <h1 class="title">Contact Me</h1>
                     <h2 style="text-align: center;">Openning Soon</h2>
@@ -105,6 +112,7 @@
             </div>
     </footer>
     <script src="js/modal.js"></script>
+    <script src="js/side-intro.js"></script>
     <script src="js/jumptocontent.js"></script>
 </body>
 </html>
