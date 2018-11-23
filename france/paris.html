@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a href = "../asia.html">ASIA</a>
+            <a class="active" href = "../europe.html">EUROPE</a>
+            <a class="active" href = "../france/paris.html">PARIS</a>
+            <a href = "../northamerica.html">NORTH AMERICA</a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
+
+
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = "myself"/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">France: Paris</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">Arc de triomphe</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/france/paris/arcdetriomphe.jpg" alt = "Arc de triomphe"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>Arc de triomphe</b> is one of the most famous monuments in Paris, standing at the western end of the Champs-Élysées at the center of Place Charles de Gaulle, formerly named Place de l'Étoile — the étoile or "star" of the juncture formed by its twelve radiating avenues.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Notre-Dame de Paris</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/france/paris/cachedralejpg.jpg" alt = "Notre-Dame de Paris"/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>Notre-Dame de Paris</b> is a medieval Catholic cathedral on the Île de la Cité in the fourth arrondissement of Paris, France. The cathedral is widely considered to be one of the finest examples of French Gothic architecture. The innovative use of the rib vault and flying buttress, the enormous and colorful rose windows, and the naturalism and abundance of its sculptural decoration all set it apart from earlier Romanesque architecture.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Louvre</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/france/paris/louvremuseum.jpg" alt = "Louvre"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Louvre</b> is the world's largest art museum and a historic monument in Paris, France. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement (district or ward). Approximately 38,000 objects from prehistory to the 21st century are exhibited over an area of 72,735 square metres (782,910 square feet).</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Eiffel Tower</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/france/paris/eiffeltower.jpg" alt = "The Oriental Pearl Tower"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Eiffel Tower</b> a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p>      
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/europe/france/paris/baguette.jpg" data-lightbox="pic" title="Baguette" ><img src="../images/europe/france/paris/baguette.jpg" alt="Baguette"></a>
+                                <a class="mobile-food land-food" href="../images/europe/france/paris/cremebrulee.jpg" data-lightbox="pic" title="Creme Brulee"><img src="../images/europe/france/paris/cremebrulee.jpg" alt="Creme Brulee"></a>
+                                <a class="mobile-food" href="../images/europe/france/paris/croissants.jpg" data-lightbox="pic" title="Croissants"><img src="../images/europe/france/paris/croissants.jpg" alt="Croissants"></a>
+                                <a class="mobile-food" href="../images/europe/france/paris/macarons.jpg" data-lightbox="pic" title="Macarons"><img src="../images/europe/france/paris/macarons.jpg" alt="Macarons"></a>
+                                <a class="mobile-food" href="../images/europe/france/paris/duckconfit.jpg" data-lightbox="pic" title="Duck Confit"><img src="../images/europe/france/paris/duckconfit.jpg" alt="Duck Confit"></a>
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/europe/france/paris/baguette.jpg" alt="Baguette">
+                                </div>
+                                <div class="back">
+                                    <p>Baguette</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/europe/france/paris/cremebrulee.jpg" alt="Creme Brulee">
+                                </div>
+                                <div class="back">
+                                    <p>Creme Brulee</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/europe/france/paris/croissants.jpg" alt="Croissants">
+                                </div>
+                                <div class="back">
+                                    <p>Croissants</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/europe/france/paris/macarons.jpg" alt="Macarons">
+                                </div>
+                                <div class="back">
+                                    <p>Macarons</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/europe/france/paris/duckconfit.jpg" alt="Duck Confit">
+                                </div>
+                                <div class="back">
+                                    <p>Duck Confit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
+
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
+        });
+    </script>
+
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
+
+    </script>
+
+</body>
+</html>

@@ -6,129 +6,213 @@
     <title>Tokyo</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
 
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
 
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href = "../index.html">HOME</a>
-    <div class="dropdown">
-      <button class="dropbtn">ASIA 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../china.html">CHINA</a>
-        <a href="../japan.html">JAPAN</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">EUROPE 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../italy.html">ITALY</a>
-        <a href="../france.html">FRANCE</a>
-        <a href="../spain.html">SPAIN</a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">NORTH AMERACA 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../califorina.html">CALIFORNIA</a>
-        <a href="../nevada.html">NEVADA</a>
-      </div>
-    </div>
-    <a href = "contact.html">CONTACTS</a>
-  </nav>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a class="active" href = "../asia.html">ASIA</a>
+            <a class="active" href = "../japan/tokyo.html">Tokyo</a>
+            <a href = "../europe.html">EUROPE </a>
+            <a href = "../northamerica.html">NORTH AMERICA </a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
 
 
-  <div class="container">
-    <header>
-        <p>
-            <span>Chen's Journey Web Site</span>
-            <br /> Since 2005
-        </p>
-    </header>
-    <main>
-    <div class="row">
-        <div class="side">
-            <br>
-            <h2>About Me</h2><br>
-            <div><img src="../images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
-            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
-            <br><br><br>
-            <h3>My Links</h3><br>
-            <ul class="icon">
-                <li>
-                    <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-3x"></i></a>
-                </li>
-            </ul>
-            
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = "myself"/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">Japan: Tokyo</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">The Imperial Palace</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/japan/tokyo/the_imperial_palace.jpg" alt = "The Imperial Palace"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>The Imperial Palace</b> is the primary residence of the Emperor of Japan. Located in the Chiyoda district of central Tokyo, it was built in 1590 by the order of shogun Tokugawa Ieyasu. The inner grounds of the palace are not generally open to the public, except for certain days of the year. However, visitors are free to browse the Imperial Palace Outer Gardens and the East Gardens, or even take photos of Nijubashi Bridge.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Tokyo Tower</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/japan/tokyo/tokyo_tower.jpg" alt = "Tokyo Tower"/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>Tokyo Tower</b> Built in 1958, the Tokyo Tower was modeled after the Eiffel Tower in Paris, and is a must-see in Tokyo. There is an observatory at different levels that provide a 360-degree view of the city. The Tokyo Tower frequently appears in film and television dramas, novels, music, etc., especially the red and white iron towers illuminated by the evening light, which is a scene often seen in Japanese TV dramas</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Ueno Park</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/japan/tokyo/ueno_park.jpg" alt = "The Oriental Pearl Tower"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Ueno Park</b> An extremely popular park in Tokyo, Ueno Park boasts a wide range of attractions such as art galleries, museums, and a zoo. Visitors are free to wonder around and experience the natural beauty and culture of this place. Every spring, visitors pour in to this famous hanami spot to view the sea of cherry blossoms within. Indeed, the falling cherry blossoms in the breeze is a truly spectacular sight.</p>      
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/asia/japan/tokyo/ramen.jpg" data-lightbox="pic" title="Ramen" ><img src="../images/asia/japan/tokyo/ramen.jpg" alt="Ramen"></a>
+                                <a class="mobile-food land-food" href="../images/asia/japan/tokyo/nigiri-zushi.jpg" data-lightbox="pic" title="Nigri Zushi"><img src="../images/asia/japan/tokyo/nigiri-zushi.jpg" alt="Nigri Zushi"></a>
+                                <a class="mobile-food" href="../images/asia/japan/tokyo/tempura.jpg" data-lightbox="pic" title="Tempura"><img src="../images/asia/japan/tokyo/tempura.jpg" alt="Tempura"></a>
+                                <a class="mobile-food" href="../images/asia/japan/tokyo/soba.jpg" data-lightbox="pic" title="Soba"><img src="../images/asia/japan/tokyo/soba.jpg" alt="Soba"></a>
+                                <a class="mobile-food" href="../images/asia/japan/tokyo/sukiyaki.jpg" data-lightbox="pic" title="Sukiyaki"><img src="../images/asia/japan/tokyo/sukiyaki.jpg" alt="Sukiyaki"></a>
+
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/asia/japan/tokyo/ramen.jpg" alt="Ramen">
+                                </div>
+                                <div class="back">
+                                    <p>Ramen</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/asia/japan/tokyo/nigiri-zushi.jpg" alt="Nigri Zushi">
+                                </div>
+                                <div class="back">
+                                    <p>Nigri Zushi</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/asia/japan/tokyo/tempura.jpg" alt="Tempura">
+                                </div>
+                                <div class="back">
+                                    <p>Tempura</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/asia/japan/tokyo/soba.jpg" alt="Soba">
+                                </div>
+                                <div class="back">
+                                    <p>Soba</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/asia/japan/tokyo/sukiyaki.jpg" alt="Sukiyaki">
+                                </div>
+                                <div class="back">
+                                    <p>Sukiyaki</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
         </div>
+    </footer>
 
 
-<div class="section main-section">
-<h1 class="title">Japan: Tokyo</h1>
-<div class="landscape">
-    <h2 class="city_disctiption"> Landscapes </h2>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/japan/tokyo/the_imperial_palace.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>The Imperial Palace</b> is the primary residence of the Emperor of Japan. Located in the Chiyoda district of central Tokyo, it was built in 1590 by the order of shogun Tokugawa Ieyasu. The inner grounds of the palace are not generally open to the public, except for certain days of the year. However, visitors are free to browse the Imperial Palace Outer Gardens and the East Gardens, or even take photos of Nijubashi Bridge.</p>      
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/japan/tokyo/tokyo_tower.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>Tokyo Tower</b> Built in 1958, the Tokyo Tower was modeled after the Eiffel Tower in Paris, and is a must-see in Tokyo. There is an observatory at different levels that provide a 360-degree view of the city. The Tokyo Tower frequently appears in film and television dramas, novels, music, etc., especially the red and white iron towers illuminated by the evening light, which is a scene often seen in Japanese TV dramas</p>      
-          </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/japan/tokyo/ueno_park.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>Ueno Park</b> An extremely popular park in Tokyo, Ueno Park boasts a wide range of attractions such as art galleries, museums, and a zoo. Visitors are free to wonder around and experience the natural beauty and culture of this place. Every spring, visitors pour in to this famous hanami spot to view the sea of cherry blossoms within. Indeed, the falling cherry blossoms in the breeze is a truly spectacular sight.</p>      
-          </div>
-    </div>
-</div>
-<div class="food">
-    <h2 class="city_disctiption"> Foods </h2>
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
 
-    <div id="food-slider">
-        <div id="photo">
-            <img src="../images/asia/japan/tokyo/ramen.jpg" alt = ""/>
-            <img src="../images/asia/japan/tokyo/sashimi.jpg" alt = ""/>
-            <img src="../images/asia/japan/tokyo/sukiyaki.jpg" alt = ""/>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</main>
-</div>
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
+        });
+    </script>
 
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
 
-<footer>
-    <p>"Show my best travel experience with you."</p>
-    <ul>
-        <li><p>CHEN SUN</p></li>
-        <li><p>sunche@umich.edu</p></li>
-    </ul>
-</footer>
+    </script>
+
 </body>
 </html>

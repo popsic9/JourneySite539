@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a href = "../asia.html">ASIA</a>
+            <a href = "../europe.html">EUROPE</a>
+            <a class="active" href = "../northamerica.html">NORTH AMERICA</a>
+            <a class="active" href = "../califorina/losangeles.html">LOS ANGELES</a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
+
+
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = "myself"/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">North America: Los Angeles</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">Beverly Hills</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/northamerica/california/la/beverlyhills.jpg" alt = "Beverly Hills"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>Beverly Hills</b> is a city located in Los Angeles County, California, United States. Beverly Hills is surrounded by the cities of Los Angeles and West Hollywood. Sometimes referred to as "90210," one of its primary ZIP codes, it is home to many celebrities, luxury hotels and the Rodeo Drive shopping district.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">California State Route 1</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/northamerica/california/la/californiaroute 1.jpg" alt = "California State Route 1"/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>California State Route 1</b> is a major north–south state highway that runs along most of the Pacific coastline of the U.S. state of California. At a total of just over 659 miles (1,061 km), it is the longest state route in California. SR 1 has several portions designated as either Pacific Coast Highway (PCH), Cabrillo Highway, Shoreline Highway, or Coast Highway.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Universal Studios Hollywood</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/northamerica/california/la/universalstudioshollywood.jpg" alt = "Universal Studios Hollywood"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Universal Studios Hollywood</b> is a film studio and theme park in the San Fernando Valley area of Los Angeles County, California. About 70% of the studio lies within the unincorporated county island known as Universal City while the rest lies within the city limits of Los Angeles, California. It is one of the oldest and most famous Hollywood film studios still in use. Its official marketing headline is "The Entertainment Capital of LA".</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/northamerica/california/la/frenchdip.jpg" data-lightbox="pic" title="French Dip" ><img src="../images/northamerica/california/la/frenchdip.jpg" alt="French Dip"></a>
+                                <a class="mobile-food land-food" href="../images/northamerica/california/la/chickenandwaffles.jpg" data-lightbox="pic" title="Chicken And Waffles"><img src="../images/northamerica/california/la/chickenandwaffles.jpg" alt="Chicken And Waffles"></a>
+                                <a class="mobile-food" href="../images/northamerica/california/la/stretchchillidog.jpg" data-lightbox="pic" title="Stretch Chilli Dog"><img src="../images/northamerica/california/la/stretchchillidog.jpg" alt="Stretch Chilli Dog"></a>
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/northamerica/california/la/frenchdip.jpg" alt="French Dip">
+                                </div>
+                                <div class="back">
+                                    <p>French Dip</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/northamerica/california/la/chickenandwaffles.jpg" alt="Chicken And Waffles">
+                                </div>
+                                <div class="back">
+                                    <p>Chicken And Waffles</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/northamerica/california/la/stretchchillidog.jpg" alt="Stretch Chilli Dog">
+                                </div>
+                                <div class="back">
+                                    <p>Stretch Chilli Dog</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
+
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
+        });
+    </script>
+
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a href = "../asia.html">ASIA</a>
+            <a class="active" href = "../europe.html">EUROPE</a>
+            <a class="active" href = "../spain/barcelona.html">BARCELONA</a>
+            <a href = "../northamerica.html">NORTH AMERICA</a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
+
+
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = "myself"/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">Spain: Barcelona</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">Casa Batlló</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/spain/bachelona/casabatllo.jpg" alt = "Casa Batlló"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>Casa Batlló</b> is a building in the center of Barcelona. It was designed by Antoni Gaudí, and is considered one of his masterpieces. A remodel of a previously built house, it was redesigned in 1904 by Gaudí and has been refurbished several times after that. Gaudí's assistants Domènec Sugrañes i Gras, Josep Canaleta and Joan Rubió also contributed to the renovation project. The local name for the building is Casa dels ossos (House of Bones), as it has a visceral, skeletal organic quality.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Park Güell</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/spain/bachelona/guellpark.jpg" alt = "Park Güell"/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>Park Güell</b> is a public park system composed of gardens and architectonic elements located on Carmel Hill, in Barcelona, Catalonia, Spain. Carmel Hill belongs to the mountain range of Collserola – the Parc del Carmel is located on the northern face. Park Güell is located in La Salut, a neighborhood in the Gràcia district of Barcelona. With urbanization in mind, Eusebi Güell assigned the design of the park to Antoni Gaudí, a renowned architect and the face of Catalan modernism.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Sagrada Família</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/spain/bachelona/sagradafamiliacathedral.jpg" alt = "Sagrada Família"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Sagrada Família</b> is a large unfinished Roman Catholic church in Barcelona, designed by Catalan architect Antoni Gaudí (1852–1926). Gaudí's work on the building is part of a UNESCO World Heritage Site, and in November 2010 Pope Benedict XVI consecrated and proclaimed it a minor basilica, as distinct from a cathedral, which must be the seat of a bishop.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Museu Picasso</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/europe/spain/bachelona/picassomuseum.jpg" alt = "Museu Picasso"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Museu Picasso</b> located in Barcelona, Catalonia, Spain, houses one of the most extensive collections of artworks by the 20th-century Spanish artist Pablo Picasso. With 4,251 works exhibited by the painter, the museum has one of the most complete permanent collections of works. The museum is housed in five adjoining medieval palaces in Barcelona's La Ribera and is located on Montcada Street in the (Bank District) of Barcelona.</p>      
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/europe/spain/bachelona/bombas.jpg" data-lightbox="pic" title="Bombas" ><img src="../images/europe/spain/bachelona/bombas.jpg" alt="Bombas"></a>
+                                <a class="mobile-food land-food" href="../images/europe/spain/bachelona/paambTomaquet.jpg" data-lightbox="pic" title="Pa Amb Tomaquet"><img src="../images/europe/spain/bachelona/paambTomaquet.jpg" alt="Pa Amb Tomaquet"></a>
+                                <a class="mobile-food" href="../images/europe/spain/bachelona/paella.jpg" data-lightbox="pic" title="Paella"><img src="../images/europe/spain/bachelona/paella.jpg" alt="Paella"></a>
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/europe/spain/bachelona/bombas.jpg" alt="Bombas">
+                                </div>
+                                <div class="back">
+                                    <p>Bombas</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/europe/spain/bachelona/paambTomaquet.jpg" alt="Pa Amb Tomaquet">
+                                </div>
+                                <div class="back">
+                                    <p>Pa Amb Tomaquet</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/europe/spain/bachelona/paella.jpg" alt="Paella">
+                                </div>
+                                <div class="back">
+                                    <p>Paella</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
+
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
+        });
+    </script>
+
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
+
+    </script>
+
+</body>
+</html>

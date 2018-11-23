@@ -6,147 +6,219 @@
     <title>Beijing</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
 
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
 
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href = "../index.html">HOME</a>
-    <div class="dropdown">
-      <button class="dropbtn">ASIA 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../china.html">CHINA</a>
-        <a href="../japan.html">JAPAN</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">EUROPE 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../italy.html">ITALY</a>
-        <a href="../france.html">FRANCE</a>
-        <a href="../spain.html">SPAIN</a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">NORTH AMERACA 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../califorina.html">CALIFORNIA</a>
-        <a href="../nevada.html">NEVADA</a>
-      </div>
-    </div>
-    <a href = "contact.html">CONTACTS</a>
-  </nav>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a class="active" href = "../asia.html">ASIA</a>
+            <a class="active" href = "../china/beijing.html">BEIJING</a>
+            <a href = "../europe.html">EUROPE</a>
+            <a href = "../northamerica.html">NORTH AMERICA</a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
 
 
-  <div class="container">
-    <header>
-        <p>
-            <span>Chen's Journey Web Site</span>
-            <br /> Since 2005
-        </p>
-    </header>
-    <main>
-    <div class="row">
-        <div class="side">
-            <br>
-            <h2>About Me</h2><br>
-            <div><img src="../images/profile.jpeg" style="height:150px; width:100%;" alt = ""/></div><br>
-            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
-            <br><br><br>
-            <h3>My Links</h3><br>
-            <ul class="icon">
-                <li>
-                    <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-3x"></i><span class="sr-only">linkedin</span></a>
-                </li>
-                <li>
-                    <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-3x"></i><span class="sr-only">github</span></a>
-                </li>
-            </ul>
-            
+    <div class="container">
+        <header>
+            <p>
+                <span>Chen's Journey Web Site</span>
+                <br /> Since 2005
+            </p>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
+            <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
+
+            <div class="row">
+                <div id="sideIntro" class="side">
+                    <h2>About Me</h2><br>
+                    <div class="grid-container grid-side">
+                        <div class="grid-item">
+                            <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = "myself"/>
+                        </div>
+                        <div class="grid-item">
+                            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section main-section">
+                    <div id="sidenavbar">
+                        <a href="#landscape">Landscape</a>
+                        <a href="#food">Food</a>
+                    </div>
+
+                    <h1 class="title">China: Beijing</h1>
+                    <div id="landscape">
+                        <h2 class="city_disctiption"> Landscapes </h2>
+
+                        <button class="accordion">The Great Wall of Badaling</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/beijing/badaling_great_wall.jpg" alt = "The Great Wall of Badaling"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p><b>The Great Wall of Badaling</b> is a pass for the Ming Great Wall. It is beautiful yet steep. A saying goes, "you are not a hero until you reach the Great Wall". Most locals take this spot to be the start of the ascent of the Great Wall. The Great Wall of Badaling Guancheng has two doors in the east and west. The title of the East Gate is "Juyong Waizhen", and the West Gate title "Beimen Suoyue". The Great Wall north of Guancheng is the Northern Great Wall, with 12 enemy buildings. South of Guancheng is the Southern Great Wall, with 7 enemy buildings. The number of tourists on the Southern Great Wall is comparatively less than that on the Northern Great Wall. If time permits, you can head to the Southern Great Wall first before going to the Northern Great Wall.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">The Bird's Nest</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/beijing/birds_nest.jpg" alt = "The Bird's Nest"/>
+                                    </div>
+                                    <div class="grid-item">
+                                            <p class="words"><b>The Bird's Nest</b> is officially called National Stadium. It is located on the northern part of Beijing. In 2008 it hosted the Beijing Olympics. Due to its magnificent architecture and the international competitions that are regularly hosted there, it has become a famous landmark in recent years. The exterior of the Bird's Nest is made up of intersecting steel sections that look like branches forming a huge nest. The unique shape of the stadium is truly stunning. The Olympic cauldron, shaped like a torch and originally mounted on top of the Bird's Nest, has been moved to the Torch Square northeast of the stadium. It is still visible from the outside of the stadium. Nearly 100,000 spectator seats fill the interior of the Bird's Nest. Their bright red color is magnificent.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Forbidden City</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/beijing/forbidden_city.jpg" alt = "Forbidden City"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Forbidden City</b> A vast majority of tourists who visit Beijing for the first time consider the Forbidden City as a place they must see. The Forbidden City, known as Gugong in Mandarin, is the royal palace of the Ming and Qing dynasties. It is also the symbol of ancient China. Although it is no longer China's political center, you can still feel its former glory once you are within the courtyard and surrounded by the high walls. Its long history has left behind a large number of precious architecture and cultural relics, thus becoming the main point of attraction for the Forbidden City.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Old Summer Palace</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/beijing/old_summer_palace.jpg" alt = "Old Summer Palace"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Old Summer Palace</b> is a famous imperial garden built during the Qing Dynasty. It consists of three sections: Yuanming Garden, Changchun Garden, and Yichun Garden. It is incomparably beautiful and has the honor "the garden of gardens." In 1860, British and French troops burned the main buildings into ashes. Nowadays, tourists can only look at the wreckage and imagine its glory during the time of the Qing Dynasty. If your imagination is not enough, you can learn more about what the garden looked like through the detailed explanation at the "Old Summer Palace Heyday Panorama Model" in Changchun Garden.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                        <button class="accordion">Tiananmen Square</button>
+                        <div class="panel">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <img class="city-image" src="../images/asia/china/beijing/tiananmen_square.jpg" alt = "Tiananmen Square"/>
+                                    </div>
+                                    <div class="grid-item">
+                                        <p class="words"><b>Tiananmen Square</b> is located on the central axis of Beijing and is the central square of the People's Republic. Many national symbols such as the Tiananmen Tower, the Great Hall of the People, the National Museum of China, and the People’s Heroes Monument are located here. Tiananmen Square is also an important locale where the People's Republic holds important ceremonies, grand gatherings and welcomes foreign guests. Since the founding of the People's Republic of China, Tiananmen Square has seen many military parades and served as a witness to the rise and prosperity of the Chinese nation. Every morning, the flag-raising ceremony at Tiananmen Square attracts many tourists.</p>      
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="food">
+                        <h2 class="city_disctiption"> Foods </h2>
+                        <p class="mobile-title">Click image to see more</p>
+                        <div class = "gallery gall-food">
+                            
+                                <a href="../images/asia/china/beijing/hotpot.jpeg" data-lightbox="pic" title="hotpot" ><img src="../images/asia/china/beijing/hotpot.jpeg" alt="hotpot"></a>
+                                <a class="mobile-food land-food" href="../images/asia/china/beijing/roast_duck.jpg" data-lightbox="pic" title="Roast Duck"><img src="../images/asia/china/beijing/roast_duck.jpg" alt="Roast Duck"></a>
+                                <a class="mobile-food" href="../images/asia/china/beijing/shredded_pork_in_beijing_sauce.jpg" data-lightbox="pic" title="Shredded Pork in Beijing Sauce"><img src="../images/asia/china/beijing/shredded_pork_in_beijing_sauce.jpg" alt="Shredded Pork in Beijing Sauce"></a>
+                        </div>
+
+                        <div class="foods-desk">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../images/asia/china/beijing/hotpot.jpeg" alt="Hotpot">
+                                </div>
+                                <div class="back">
+                                    <p>Hotpot</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front" >
+                                        <img src="../images/asia/china/beijing/roast_duck.jpg" alt="Roast Duck">
+                                </div>
+                                <div class="back">
+                                    <p>Roast Duck</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="front">
+                                        <img src="../images/asia/china/beijing/shredded_pork_in_beijing_sauce.jpg" alt="Shredded Pork in Beijing Sauce">
+                                </div>
+                                <div class="back">
+                                    <p>Shredded Pork in Beijing Sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+            <div class="item4">
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
+            <div class="item4">
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+            </div>
         </div>
+    </footer>
 
 
-<div class="section main-section">
-<h1 class="title">China: Beijing</h1>
-<div class="landscape">
-    <h2 class="city_disctiption"> Landscapes </h2>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/beijing/badaling_great_wall.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>The Great Wall of Badaling</b> is a pass for the Ming Great Wall. It is beautiful yet steep. A saying goes, "you are not a hero until you reach the Great Wall". Most locals take this spot to be the start of the ascent of the Great Wall. The Great Wall of Badaling Guancheng has two doors in the east and west. The title of the East Gate is "Juyong Waizhen", and the West Gate title "Beimen Suoyue". The Great Wall north of Guancheng is the Northern Great Wall, with 12 enemy buildings. South of Guancheng is the Southern Great Wall, with 7 enemy buildings. The number of tourists on the Southern Great Wall is comparatively less than that on the Northern Great Wall. If time permits, you can head to the Southern Great Wall first before going to the Northern Great Wall.</p>      
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/beijing/birds_nest.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>The Bird's Nest</b> is officially called National Stadium. It is located on the northern part of Beijing. In 2008 it hosted the Beijing Olympics. Due to its magnificent architecture and the international competitions that are regularly hosted there, it has become a famous landmark in recent years. The exterior of the Bird's Nest is made up of intersecting steel sections that look like branches forming a huge nest. The unique shape of the stadium is truly stunning. The Olympic cauldron, shaped like a torch and originally mounted on top of the Bird's Nest, has been moved to the Torch Square northeast of the stadium. It is still visible from the outside of the stadium. Nearly 100,000 spectator seats fill the interior of the Bird's Nest. Their bright red color is magnificent.</p>      
-          </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/beijing/forbidden_city.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>Forbidden City.</b> A vast majority of tourists who visit Beijing for the first time consider the Forbidden City as a place they must see. The Forbidden City, known as Gugong in Mandarin, is the royal palace of the Ming and Qing dynasties. It is also the symbol of ancient China. Although it is no longer China's political center, you can still feel its former glory once you are within the courtyard and surrounded by the high walls. Its long history has left behind a large number of precious architecture and cultural relics, thus becoming the main point of attraction for the Forbidden City.</p>      
-          </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/beijing/old_summer_palace.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>Forbidden City.</b>  is a famous imperial garden built during the Qing Dynasty. It consists of three sections: Yuanming Garden, Changchun Garden, and Yichun Garden. It is incomparably beautiful and has the honor "the garden of gardens." In 1860, British and French troops burned the main buildings into ashes. Nowadays, tourists can only look at the wreckage and imagine its glory during the time of the Qing Dynasty. If your imagination is not enough, you can learn more about what the garden looked like through the detailed explanation at the "Old Summer Palace Heyday Panorama Model" in Changchun Garden.</p>      
-          </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="city-image" src="../images/asia/china/beijing/tiananmen_square.jpg" alt = ""/>
-          </div>
-        <div class="grid-item">
-            <p class="words"><b>Tiananmen Square</b> is located on the central axis of Beijing and is the central square of the People's Republic. Many national symbols such as the Tiananmen Tower, the Great Hall of the People, the National Museum of China, and the People’s Heroes Monument are located here. Tiananmen Square is also an important locale where the People's Republic holds important ceremonies, grand gatherings and welcomes foreign guests. Since the founding of the People's Republic of China, Tiananmen Square has seen many military parades and served as a witness to the rise and prosperity of the Chinese nation. Every morning, the flag-raising ceremony at Tiananmen Square attracts many tourists.</p>      
-          </div>
-    </div>
-</div>
-<div class="food">
-    <h2 class="city_disctiption"> Foods </h2>
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/side-intro.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/jumptocontent.js"></script>
 
-    <div id="food-slider">
-        <div id="photo">
-            <img src="../images/asia/china/beijing/hotpot.jpeg" alt = ""/>
-            <img src="../images/asia/china/beijing/roast_duck.jpg" alt = ""/>
-            <img src="../images/asia/china/beijing/shredded_pork_in_beijing_sauce.jpg" alt = ""/>
-        </div>
-    </div>
-</div>
-</div>
-</div>
+    <script>
+        // Flip Card
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover',
+                speed: '1000ms',
+                direction: 'lr',
+            });
+        });
+    </script>
 
-</main>
-</div>
+    <script>
+        // Light Box
+        // var text = document.getElementById
+        lightbox.option({
+        'resizeDuration': 600,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'albumLabel':'Food Image %1 of %2'
+        })
 
+    </script>
 
-
-<footer>
-    <p>"Show my best travel experience with you."</p>
-    <ul>
-        <li><p>CHEN SUN</p></li>
-        <li><p>sunche@umich.edu</p></li>
-    </ul>
-</footer>
 </body>
 </html>
