@@ -71,9 +71,7 @@ nav {
     box-shadow: 0px 2px 10px #333333;
 }
 
-.active {
-  background-color: rgb(247, 222, 83);
-}
+
 
 /* Links inside the navbar */
 .navbar a {
@@ -83,6 +81,12 @@ nav {
     text-align: left;
     padding: 10px 20px;
     text-decoration: none;
+  }
+
+  .navbar .active {
+    background-color: rgb(247, 222, 83);
+    color: black;
+    font-weight:bold;
   }
 
 
@@ -199,13 +203,14 @@ nav {
 .container > header p {
   color: black;
   font-family: 'Crafty Girls';
-  font-weight: 400;
+  font-weight: bold;
   font-size: 1.5em;
   line-height: 1.5em;
   margin-left: 20px;
   /* line */
   border-left: 1px solid white;
   padding-left: 5px;
+
 }
 
 .container > header p span{
@@ -228,13 +233,29 @@ nav {
 }
 
 
+.mobile-side {
+  background-color: rgb(252, 228, 169);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
 
-
+.mobile-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 .section{
   background-color: #F2EBD9;
   border-bottom: 1px solid white;
-  padding: 20px;
+  padding: 50px;
+  padding-bottom: 70px;
   transition: background-color 100ms linear;
 }
 
@@ -248,7 +269,8 @@ nav {
 .item4{
   flex: 50%;
   align-self: center;
-  margin-right: 20px;
+  margin:2px;
+  padding-bottom: 10px;
 }
 
 .main-section{
@@ -293,13 +315,17 @@ nav {
   display: none;
 }
 
-.gallery a {
+.wrap {
   position: relative;
 }
 
-.mobile-adgest h4{
+.mobile-adgest div{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  margin: 0px;
+
   display: block;
-  width: 299px;
+  width: 100%;
   position: absolute;
   bottom: 4px;
   left: 0px;
@@ -315,6 +341,9 @@ nav {
   padding-right: 0px;
 }
 
+.mobile-food{
+  display: none;
+}
 
 
 
@@ -338,7 +367,7 @@ nav {
 
 
 .gallery{
-	width: 80%;
+	width: 100%;
 	margin:0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -349,6 +378,7 @@ nav {
 .gallery img{
 	width: 100%;
 }
+
 
 .country-btn{
   text-align: center;
@@ -463,17 +493,31 @@ input {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* 4. footer*/
 footer {
-  background: rgb(150, 149, 149);
+  background: rgb(252, 224, 155);
   font-size:  1em;
-  height:     0px;
   position:   relative;
-  margin-top: 20px;
+  margin: 0px auto;
+  height: 100%;
+  padding: 20px;
 }
 footer p {
   text-align: center;
-  color:  white;
+  font-weight: bold;
+  color:  rgb(0, 0, 0);
 }
 
 

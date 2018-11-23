@@ -5,147 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+    <style>
+        body{
+            margin-top: 10%;
+            margin-left: 40%
+        }
+        .card {
+            width: 300px;
+            height: 200px;
+        }
+        .card img{
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+        }
+        .card div{
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+            background: #82bffc;
+        }
+        
+        .card div p {
+            text-align: center;
+        }
+
+        .front img{
+            position:absolute;
+            z-index: 333;
+        }
+        .back div{
+            position:absolute;
+        }
+
+    </style>
 
     <title>Document</title>
 </head>
 <body>
-    <a class="link" href="#" rel="div1">Tab 1</a>
-    <a class="link" href="#" rel="div2">Tab 2</a>
+    <div class="card">
+        <div class="front">
+            <img src="images/asia/china/shanghai/congee.jpg" alt="Congeee">
+        </div>
+        <div class="back">
+            <div>
+                <p>Crawfish</p>
+            </div>
+        </div>    
+    </div>
 
-    <div class="content5" id="div1">Content of Tab 1<br><br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+
+
+    <div class="card">
+            <div class="front">
+                <img src="images/asia/china/shanghai/congee.jpg" alt="Congeee">
+            </div>
+            <div class="back">
+                <div>
+                    <p>Crawfish</p>
+                </div>
+            </div>
     </div>
-    <div class="content5" id="div2">Content of Tab 2
-        <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    </div>
-    <script>
-        $('.link').click(function(e) {
-            e.preventDefault();
-            var content = $(this).attr('rel');
-            $('.active').removeClass('active');
-            $(this).addClass('active');
-            $('.content5').hide();
-            $('#' + content).show();
-        });​
-        </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".card").flip({
+                trigger: 'hover'
+            });
+        });
+    </script>
 </body>
 
 </html>

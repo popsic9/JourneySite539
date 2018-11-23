@@ -33,50 +33,23 @@
     h2{
       text-align: left;
     }
-    .items{
+
+    .item-land{
       flex-direction: row;
     }
-  
-    .item1{
-      flex:35%;
-    }
-    .item2{
-      flex:75%;
-    }
-  
-    .item4{
-      flex: none;
-      margin-left: 20px;
-    }
-  
-    #self-image {
-      height: 150px;
-    }
-    .row{
-      flex-direction:column;
-    }
-    .side{
-      display: none;
-    }
 
-    .icon-index{
-        margin-left: 40px;
-    }
     .grid-container{
     grid-template-columns: 50% 50%;
     grid-row-gap: 20px;
     }
     .grid-item {
-    padding: 5px;
-    }
-    .city_disctiption{
-    text-align:left;
-    margin-left: 70px;
+    padding: 0px;
     }
 
 
-    .mobile-adgest h4{
-      width: 553px;
+
+    .mobile-adgest div{
+      width: 100%;
     }
 
 
@@ -88,6 +61,28 @@
     p{
       font-size: 20px;
     }
+
+
+
+    .food-gall{
+      grid-template-columns: 1fr 1fr;
+    }
+
+  
+
+    .modal-content {
+      margin: 10% auto; /* 15% from the top and centered */
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    .gallery{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .land-food{
+      display: block;
+    }
+
   }
   
   
@@ -125,7 +120,7 @@
       position: absolute;
     }
     .container {
-      margin: 5px auto;
+      margin: 0px auto;
       max-width: 1200px;
       min-width: 700px;
     }
@@ -143,8 +138,14 @@
     .side{
       display: block;
     }
+
+    .mobile-side{
+      display: none;
+    }
+
     .items{
       flex-direction: row;
+      justify-content: center;
     }
   
     .item4{
@@ -154,9 +155,12 @@
     #self-image {
       height: 250px;
     }
-    .icon-index{
-      margin-left: 40px;
+
+    .item4{
+      margin-left: 10px;
+      margin-right: 10px;
     }
+
     .grid-container{
       grid-template-columns: 40% 60%;
       grid-row-gap: 50px;
@@ -164,10 +168,7 @@
     .grid-item {
       padding: 20px;
     }
-    .city_disctiption{
-      text-align:left;
-      margin-left: 70px;
-    }
+
     #food-slider{
       width: 400px;
       height: 300px;
@@ -177,8 +178,9 @@
       height: 300px;
     }
     footer{
-      height: 100px;
-      margin-top: 50px;
+      max-width: 1200px;
+      min-width: 700px;
+
     }
     footer ul{
       display: flex;
@@ -187,11 +189,9 @@
 
 
     .gallery{
-      grid-template-columns: 1fr 1fr;
+      display: none;
     }
-    .food-gall{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+
 
     .country-btn button{
       display:inline-block;
@@ -220,6 +220,14 @@
     .mobile-adgest{
       display: none;
     }
+
+    .mobile-food{
+      display: block;
+    }
+    .mobile-title{
+      display: none;
+    }
+  
 
     .overlay {
       display: block;
@@ -276,5 +284,28 @@
       transform: scale(1.1);
     }
 
+
+    .foods-desk{
+      display: flex;
+    }
+
+
+
+    .modal-content {
+      margin: 10% auto; /* 15% from the top and centered */
+      width: 50%; /* Could be more or less, depending on screen size */
+    }
     
+
+    .grid-side{
+      display: block;
+    }
+
+    .accordion{
+      display: none;
+    }
+    .panel{
+      max-height: 100%;
+      overflow: visible;
+    }
   }

@@ -6,45 +6,26 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css"> 
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/modals.css">
     <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
 </head>
 
 <body>
-  <nav class="navbar">
-      <a href = "index.html">HOME</a>
-      <div class="dropdown">
-                <button class="dropbtn">ASIA 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="china.html">CHINA</a>
-                  <a href="japan.html">JAPAN</a>
-                </div>
-        </div>
-        <div class="dropdown">
-                <button class="dropbtn">EUROPE 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="italy.html">ITALY</a>
-                  <a href="france.html">FRANCE</a>
-                  <a href="spain.html">SPAIN</a>
-                </div>
-        </div> 
-        <div class="dropdown">
-                <button class="dropbtn">NORTH AMERACA 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="califorina.html">CALIFORNIA</a>
-                  <a href="nevada.html">NEVADA</a>
-                </div>
-        </div>
-      <a class="active" href = "contact.html">CONTACTS</a>
+    <nav class="navbar">
+            <a href = "index.html">HOME</a>
+            <a href = "asia.html">ASIA </a>
+            <a href = "asia.html">EUROPE </a>
+            <a href = "asia.html">NORTH AMERICA </a>
+            <a class="active" href = "contact.html">CONTACTS</a>
     </nav>
 
 
@@ -66,23 +47,12 @@
                 <h2>About Me</h2><br>
                 <div><img src="images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
                 <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
-                <br><br><br>
-                <h3>My Links</h3><br>
-                <ul class="icon">
-                    <li>
-                        <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-3x"></i><span class="sr-only">linkedin</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-3x"></i><span class="sr-only">github</span></a>
-                    </li>
-                </ul>
-                
             </div>
         <div class="section main-section">
         <h1 class="title">Contact Me</h1>
+            <h2 style="text-align: center;">Openning Soon</h2>
             <form action='/contact' method="POST">
                 <fieldset class="contact-info">
-                <!-- <legend>Login</legend> -->
                     <label for="name">
                         Name
                         <input class="form-control" name="name" id="name" type="text" required>
@@ -100,28 +70,48 @@
                 </fieldset>
 
                 <fieldset class="contact-action">
-                    <input class="btn" type="submit" name="submit" value="Send">
+                    <input id="myBtn" class="btn" type="submit" name="submit" value="Send">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h1>Warning!</h1>
+                            </div>
+                            <div class="modal-body">
+                                <p>The web site is still under development </p>
+                                <br>
+                                <p>Contact Function Will Be Openning Soon.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <h2 style="text-align:center;">Sorry For That</h2>
+                            </div>
+                        </div>
+                    
+                    </div>
                 </fieldset>
             </form>
         </div>
         </div>
         </div>
         </main>
-
-
-
-
-
-
-
-
-
-<footer>
-    <p>"Show my best travel experience with you."</p>
-    <ul>
-        <li><p>CHEN SUN</p></li>
-        <li><p>sunche@umich.edu</p></li>
-    </ul>
-</footer>
+    <footer>
+        <p>"Show my best travel experience with you."</p>
+        <ul>
+            <li><p>CHEN SUN</p></li>
+            <li><p>sunche@umich.edu</p></li>
+        </ul>
+        <div class="items icon icon-index">
+                <div class="item4">
+                    <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+                </div>
+                <div class="item4">
+                    <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+                </div>
+            </div>
+    </footer>
+    <script type="text/javascript" src="js/modal.js"></script>
 </body>
 </html>

@@ -6,47 +6,31 @@
     <title>Shanghai</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
     <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Flip Card -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+
+
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href = "../index.html">HOME</a>
-    <div class="dropdown">
-      <button class="dropbtn">ASIA 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../china.html">CHINA</a>
-        <a href="../japan.html">JAPAN</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">EUROPE 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../italy.html">ITALY</a>
-        <a href="../france.html">FRANCE</a>
-        <a href="../spain.html">SPAIN</a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropbtn">NORTH AMERACA 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="../califorina.html">CALIFORNIA</a>
-        <a href="../nevada.html">NEVADA</a>
-      </div>
-    </div>
-    <a href = "contact.html">CONTACTS</a>
-  </nav>
+    <nav class="navbar">
+            <a href = "../index.html">HOME</a>
+            <a class="active" href = "../asia.html">ASIA </a>
+            <a href = "../asia.html">EUROPE </a>
+            <a href = "../asia.html">NORTH AMERICA </a>
+            <a href = "../contact.html">CONTACTS</a>
+    </nav>
 
 
   <div class="container">
@@ -57,23 +41,20 @@
         </p>
     </header>
     <main>
+    
+        <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()"><p>Show my information</p></button>
+
     <div class="row">
-        <div class="side">
-            <br>
+        <div id="sideIntro" class="side">
             <h2>About Me</h2><br>
-            <div><img src="../images/profile.jpeg" style="height:150px;width:100%;" alt = ""/></div><br>
-            <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
-            <br><br><br>
-            <h3>My Links</h3><br>
-            <ul class="icon">
-                <li>
-                    <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-3x"></i><span class="sr-only">linkedin</span></a>
-                </li>
-                <li>
-                    <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-3x"></i><span class="sr-only">github</span></a>
-                </li>
-            </ul>
-            
+            <div class="grid-container grid-side">
+                <div class="grid-item">
+                    <img src="../images/profile.jpeg" style="height:auto; width:100%;" alt = ""/>
+                </div>
+                <div class="grid-item">
+                    <p>Hi, my name is Chen. I am a student in University of Michigan, Ann Arbor. This is my journey! I want to use this website to tell people my story. </p>
+                </div>
+            </div>
         </div>
 
 
@@ -86,45 +67,99 @@
     <h1 class="title">China: Shanghai</h1>
     <div id="landscape">
         <h2 class="city_disctiption"> Landscapes </h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img class="city-image" src="../images/asia/china/shanghai/shanghai_bund.jpg" alt = ""/>
-            </div>
-            <div class="grid-item">
-                <p><b>The Bund</b>  is a walking tour between Baidu Bridge and Jinling East Road outside the west bank of Huangpu in Shanghai. At night, the two sides of the Pujiang River are lit with neon lights, and it is suitable for strolling with your lover on the Bund, feeling the charm and romance of “Never Sleeping City”. </p>      
-            </div>
+
+        <button class="accordion">The Bund</button>
+        <div class="panel">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_bund.jpg" alt = ""/>
+                    </div>
+                    <div class="grid-item">
+                        <p><b>The Bund</b>  is a walking tour between Baidu Bridge and Jinling East Road outside the west bank of Huangpu in Shanghai. At night, the two sides of the Pujiang River are lit with neon lights, and it is suitable for strolling with your lover on the Bund, feeling the charm and romance of “Never Sleeping City”. </p>      
+                    </div>
+                </div>
         </div>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img class="city-image" src="../images/asia/china/shanghai/shanghai_ifc.jpg" alt = ""/>
-            </div>
-            <div class="grid-item">
-                <p class="words"><b>The Shanghai World Financial Center</b> stands in the Lujiazui Finance and Trade Zone and is similar in shape to a bottle opener. Boarding the 100-story sightseeing hall, you can look directly at the peak of the Oriental Pearl Tower.</p>      
-            </div>
+
+        <button class="accordion">The Shanghai World Financial Center</button>
+        <div class="panel">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_ifc.jpg" alt = ""/>
+                    </div>
+                    <div class="grid-item">
+                            <p class="words"><b>The Shanghai World Financial Center</b> stands in the Lujiazui Finance and Trade Zone and is similar in shape to a bottle opener. Boarding the 100-story sightseeing hall, you can look directly at the peak of the Oriental Pearl Tower.</p>      
+                    </div>
+                </div>
         </div>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img class="city-image" src="../images/asia/china/shanghai/shanghai_orien.jpg" alt = ""/>
-            </div>
-            <div class="grid-item">
-                <p class="words"><b>The Oriental Pearl Tower,</b> 468 meters high, is located in Shanghai's Lujiazui Financial Quarter. It faces the Bund across the river and is one of Shanghai's landmark buildings.</p>      
-            </div>
+
+        <button class="accordion">The Oriental Pearl Tower</button>
+        <div class="panel">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img class="city-image" src="../images/asia/china/shanghai/shanghai_orien.jpg" alt = ""/>
+                    </div>
+                    <div class="grid-item">
+                        <p class="words"><b>The Oriental Pearl Tower,</b> 468 meters high, is located in Shanghai's Lujiazui Financial Quarter. It faces the Bund across the river and is one of Shanghai's landmark buildings.</p>      
+                    </div>
+                </div>
         </div>
     </div>
+
+
     <div id="food">
         <h2 class="city_disctiption"> Foods </h2>
 
-        <!-- <div id="food-slider">
-            <div id="photo">
-                <img src="../images/asia/china/shanghai/congee.jpg" alt = ""/>
-                <img src="../images/asia/china/shanghai/crawfish.jpg" alt = ""/>
-                <img src="../images/asia/china/shanghai/hairycrab.jpg" alt = ""/>
+
+
+        <p class="mobile-title">Click image to see more</p>
+        <div class = "gallery">
+            
+                <a href="../images/asia/china/shanghai/congee.jpg" data-lightbox="pic" title="Congeee" ><img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee"></a>
+                <a class="mobile-food land-food" href="../images/asia/china/shanghai/crawfish.jpg" data-lightbox="pic" title="Crawfish"><img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish"></a>
+                <a class="mobile-food" href="../images/asia/china/shanghai/hairycrab.jpg" data-lightbox="pic" title="Hairycrab"><img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab"></a>
+                <a class="mobile-food" href="../images/asia/china/shanghai/hongshaorou.jpeg" data-lightbox="pic" title="Hongshaorou"><img src="../images/asia/china/shanghai/hongshaorou.jpeg" alt="Hongshaorou"></a>
+        </div>
+
+
+
+
+
+        <div class="foods-desk">
+            <div class="card"">
+                <div class="front">
+                    <img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee">
+                </div>
+                <div class="back">
+                    <p>Congeee</p>
+                </div>
             </div>
-        </div> -->
-        <div class = "gallery food-gall">
-                <a href="../images/asia/china/shanghai/congee.jpg" data-lightbox="pic" ><img src="../images/asia/china/shanghai/congee.jpg" alt="Congeee"></a>
-                <a href="../images/asia/china/shanghai/crawfish.jpg" data-lightbox="pic"><img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish"></a>
-                <a href="../images/asia/china/shanghai/hairycrab.jpg" data-lightbox="pic"><img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab"></a>
+            <div class="card">
+                <div class="front" >
+                        <img src="../images/asia/china/shanghai/crawfish.jpg" alt="Crawfish">
+                </div>
+                <div class="back">
+                    <p>Crawfish</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                        <img src="../images/asia/china/shanghai/hairycrab.jpg" alt="Hairycrab">
+                </div>
+                <div class="back">
+                    <p>Hairycrab</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                        <img src="../images/asia/china/shanghai/hongshaorou.jpeg" alt="Hongshaorou">
+                </div>
+                <div class="back">
+                    <p>Hongshaorou</p>
+                </div>
+            </div>
+
+        </div>
+
         </div>
     </div>
 
@@ -142,9 +177,44 @@
         <li><p>CHEN SUN</p></li>
         <li><p>sunche@umich.edu</p></li>
     </ul>
+    <div class="items icon icon-index">
+        <div class="item4">
+            <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+        </div>
+        <div class="item4">
+            <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+        </div>
+    </div>
 </footer>
 
 
-<script src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<script type="text/javascript" src="../js/side-intro.js"></script>
+<script type="text/javascript" src="../js/accordion.js"></script>
+<script type="text/javascript">
+    // Flip Card
+    $(document).ready(function(){
+        $(".card").flip({
+            trigger: 'hover',
+            speed: '1000ms',
+            direction: 'lr',
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    // Light Box
+    // var text = document.getElementById
+    lightbox.option({
+      'resizeDuration': 600,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true,
+      'albumLabel':'Food Image %1 of %2'
+    })
+
+</script>
+
+
+
 </body>
 </html>
