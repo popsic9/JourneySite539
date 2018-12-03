@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/slider.css">
     <link rel="stylesheet" type="text/css" href="../css/accordion.css">
     <link rel="stylesheet" type="text/css" href="../css/jumptocontent.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/jumptomain.css">
     <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
     <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet'>
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <a class="skip-main" href="#main"><p>Skip to main content</p></a>
     <nav class="navbar">
             <a href = "../index.html">HOME</a>
             <a href = "../asia.html">ASIA</a>
@@ -42,7 +43,7 @@
                 <br /> Since 2005
             </p>
         </header>
-        <main>
+        <main id="main">
             <button onclick="topFunction()" id="jumpBtn" title="Go to top">Top</button>
             <button id="mobile-btn" class="mobile-side" type="button" onclick="showSide()">Show my information</button>
 
@@ -188,10 +189,10 @@
         </ul>
         <div class="items icon icon-index">
             <div class="item4">
-                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">linkedin</span></a>
+                <a href="https://www.linkedin.com/in/chen-sun-86403a170"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i><span class="sr-only">linkedin</span></a>
             </div>
             <div class="item4">
-                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x"></i><span class="sr-only">linkedin</span></a>
+                <a href="https://github.com/popsic9/JourneySite539"><i class="fab fa-github fa-2x" aria-label="github"></i><span class="sr-only">github</span></a>
             </div>
         </div>
     </footer>
